@@ -1,16 +1,16 @@
 # Apply Filters to SQL Queries
 
-# Step 1 & Step 2: Project Description and Scenario
+## Step 1 & Step 2: Project Description and Scenario
 
 My organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. As a cybersecurity professional, I must examine the organization's data in the employees and log_in_attempts tables to detect anomalies and identify system updates.
 
 This technical report details how I leveraged SQL filtering commands to investigate suspicious login attempts and isolate specific employee workstations requiring security patches.
 
-## Project Name: Apply filters to SQL queries
+**Project Name:** Apply filters to SQL queries
 
-Database Environment: MariaDB / MySQL Shell
+**Database Environment:** MariaDB / MySQL Shell
 
-Core Commands Used: SELECT, FROM, WHERE, AND, OR, NOT, LIKE
+**Core Commands Used:** SELECT, FROM, WHERE, AND, OR, NOT, LIKE
 
 # Step 3: Retrieve After-Hours Failed Login Attempts
 
