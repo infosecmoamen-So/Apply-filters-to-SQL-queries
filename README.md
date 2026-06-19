@@ -21,7 +21,7 @@ WHERE login_time > '18:00' AND success = FALSE;
 ```
 
 #### 📸 Output Verification Screenshot:
-![After-Hours Failed Login Attempts](images/01_failed_logins.png)
+![After-Hours Failed Login Attempts](https://i.imgur.com/0yz8Rnu.png)
 
 * **Final Solution:** The query successfully filtered for and returned all after-hours failed login attempts. The output showed specific compromised login records (such as usernames `apatel`, `pwashing`, and `tshah`), allowing the security team to identify target profiles and block suspicious source IP addresses.
 
@@ -37,7 +37,7 @@ WHERE login_date = '2022-05-09' OR login_date = '2022-05-08';
 ```
 
 #### 📸 Output Verification Screenshot:
-![Login Attempts on Specific Dates](images/02_specific_dates.png)
+![Login Attempts on Specific Dates](https://i.imgur.com/XXKvADT.png)
 
 * **Final Solution:** The query returned all login attempts (both successful and failed) within this 48-hour attack window. Reviewing these logs helped establish a comprehensive timeline of the threat actor's activity.
 
@@ -53,7 +53,7 @@ WHERE NOT country LIKE 'MEX%';
 ```
 
 #### 📸 Output Verification Screenshot:
-![Login Attempts Outside Mexico](images/03_outside_mexico.png)
+![Login Attempts Outside Mexico](https://i.imgur.com/RTo5NQq.png)
 
 * **Final Solution:** The query filtered out all local Mexican login events, highlighting attempts originating from foreign countries (such as Canada `CAN` and the United States `USA`). This enabled the team to check for anomalous geo-location logins.
 
@@ -69,7 +69,7 @@ WHERE department = 'Marketing' AND office LIKE 'East%';
 ```
 
 #### 📸 Output Verification Screenshot:
-![Marketing Employees East Building](images/04_marketing_east.png)
+![Marketing Employees East Building](https://i.imgur.com/edb75L4.png)
 
 * **Final Solution:** This query successfully returned the list of target employees (such as `elarson`, `jdarosa`, and `fbautist`) and their device IDs in the East building, allowing the IT department to run targeted patch deployments.
 
@@ -85,7 +85,7 @@ WHERE department = 'Finance' OR department = 'Sales';
 ```
 
 #### 📸 Output Verification Screenshot:
-![Finance or Sales Employees](images/05_finance_sales.png)
+![Finance or Sales Employees](https://i.imgur.com/gehXr8L.png)
 
 * **Final Solution:** The output returned all employees belonging to either the Finance department (such as `sgilmore`, `wjaffrey`, and `abernard`) or the Sales department. This consolidated list helps automate the specific patch updates for these departments.
 
@@ -101,7 +101,7 @@ WHERE NOT department = 'Information Technology';
 ```
 
 #### 📸 Output Verification Screenshot:
-![Employees Outside IT](images/06_not_it.png)
+![Employees Outside IT](https://i.imgur.com/IQTQnMk.png)
 
 * **Final Solution:** The query successfully returned all company personnel who are not in the IT department (such as `elarson` in Marketing and `bmoreno` in Human Resources). This produced a clean list of devices that still need the mandatory update.
 
